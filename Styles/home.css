@@ -1,0 +1,193 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+#Home{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
+  margin-top: 3rem;
+}
+
+.home__Content{
+  max-width: 600px;
+}
+.home__Content h1{
+  margin-top: 5rem;
+}
+
+.home__changed-Text{
+  font-weight: 600;
+}
+.home__changed-Text h3{
+  display: inline-flex;
+  margin: 0;
+  vertical-align: top;
+  font-size: var(--size-base);
+}
+.home__changed-Text h3 .home__changed-words{
+  position: absolute;
+  display: flex;
+  opacity: 0;
+}
+.home__changed-Text h3 .home__changed-words .letter{
+  transform-origin: center center 25px;
+}
+.home__changed-Text h3 .home__changed-words .letter.out{
+transform: rotateX(90deg);
+transition: 0.22s cubic-bezier(0.6,0,0.7,0.2);
+}
+.home__changed-Text h3 .home__changed-words .letter .in{
+  transition: 0.28s ease;
+}
+.home__changed-Text h3 .home__changed-words .letter .behind{
+  transform: rotateY(-90deg);
+}
+.home__description{
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+
+.home__btn{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem ;
+  align-items: center;
+  justify-content: center;
+}
+.learnMore{
+  padding: 0.8rem 1rem; 
+  background: transparent;
+  outline: none;
+  border: 3px solid var(--just-text);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-size: var(--size-lg);
+  font-weight: bolder;
+
+}
+
+.learnMore span{
+  width: 0;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.8s;
+
+}
+.learnMore:hover span{
+  background: #fff;
+  width: 100%;
+}
+.learnMore a:hover{
+  color:var(--other-text);
+ 
+}
+.home__social-Media{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.hackernoon__icon{
+  width:2.5rem;
+  height: 3rem;
+  border: 3px solid var(--just-text);
+  border-radius: 10%;
+  margin-top: 0.5rem;
+}
+
+
+
+/* @media (min-width: 300px) {
+  .home__btn{
+ 
+  }
+  .contact__otherContact{
+    flex-direction: column;
+  }
+  footer p{
+    font-size: var(--size-sm);
+
+  }
+  .contact__name{
+    flex-direction: column;
+  }
+
+} */
+/* xtraSmallScreen */
+@media (min-width: 475px) {
+  .home__description{
+   font-size: var(--size-lg);
+   text-align: center;
+  }
+  .home__Content h1{
+    font-size: var(--size-3xl);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .home__changed-Text h3{
+    font-size: var(--size-xl);
+
+  }
+
+  
+}
+
+/* smallScreen*/
+
+/* @media (min-width: 640px) {
+   
+} */
+
+/* mediumScreen*/
+
+@media (min-width: 768px) {
+  .home__btn{
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 3rem;
+  }
+    
+}
+
+/*largeScreen*/
+
+@media (min-width: 950px) {
+  .home__Content h1{
+    font-size: var(--size-4xl);
+    font-weight: 700;
+    margin-top: 7rem;
+  }
+
+  .home__description{
+    font-size: var(--size-xl);
+  }
+  
+  .home__changed-Text h3{
+    font-size: var(--size-3xl);
+  }
+}
+
+/*xtraLargeScreen*/
+
+/* @media (min-width: 1280px) {
+   
+} */
+
+/*2XtraLargeScreen*/
+
+/* @media (min-width: 1536px) {
+  
+} */

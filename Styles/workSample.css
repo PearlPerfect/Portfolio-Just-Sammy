@@ -1,0 +1,227 @@
+
+.workSamples__title{
+    text-transform: uppercase;
+}
+.workSample__description{
+    color: var(--text-color);
+}
+.workSample__gallary{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+        width: 100%;
+}
+.workSample__boxes{
+    overflow: hidden;
+    border-radius: 2rem;
+    display: flex;
+    grid-template-rows:1fr auto ;
+    align-items: center;
+    border: 3px solid var(--just-text);
+    box-shadow: #78fff4;
+    position: relative;
+}
+/* .workSample__boxes:hover{
+    transition: transformY(-1);
+} */
+.workSample__boxes:hover .workSample__images img{
+    transform: scale(1.1);
+}
+.workSample__images{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.workSample__images img{
+    width: 100%;
+    opacity: .5s;
+    height: 100%;
+    transition: .5s;
+}
+.workSample__content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--work-sample-background);
+    /* color: var(--other-text); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: left;
+    transition: .5s;
+    
+}
+
+.workSample__content h3{
+    font-weight: bolder;
+    margin-bottom: .2rem;
+    font-size: var(--size-xl);
+    text-align: center;
+}
+.workSample__content p{
+    margin-bottom:var(--size-base);
+    font-size: var(--size-base);
+    /* font-weight: 200; */
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.workSample__content a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background:#ffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--just-text);
+}
+
+.workSample__content a i{
+    font-size: 1rem;
+    color: var(--just-text);
+}
+.fa-up-right-from-square{
+    border: none;
+}
+
+.workSample__content a i:hover{
+    background: none;
+}
+
+/* xtraSmallScreen */
+@media (min-width: 300px){
+    .workSample__gallary{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+    }
+    .workSample__content h3{
+        font-size: var(--size-lg);
+        text-align: center;
+        font-weight: bold;
+    }
+    .workSample__content p{
+        margin-bottom:var(--size-sm)
+    }
+
+}
+
+
+@media (min-width: 375px) {
+    .workSample__content p{
+        margin-bottom:var(--size-sm);
+        font-size: var(--size-base);
+        font-weight: 200;
+        margin-bottom: .5rem;
+    }
+    .workSample__content h3{
+        font-size: var(--size-base);
+        text-align: center;
+        display: none;
+    }
+
+}
+
+
+@media (min-width: 450px){
+    .workSample__content h3{
+        font-size: var(--size-sm);
+        text-align: center;
+        display: none;
+    }
+}
+/* smallScreen*/
+
+@media (min-width: 640px) {
+    .workSample__content p{
+        margin-bottom:var(--size-sm);
+        font-size: var(--size-sm);
+        /* font-weight: 200; */
+        margin-bottom: .5rem;
+    }
+    .workSample__content h3{
+        font-size: var(--size-base);
+        text-align: center;
+        display: flex;
+
+    }
+
+}
+
+/* mediumScreen*/
+
+@media (min-width: 768px) {
+    .workSample__content h3{
+        margin-bottom: .5rem;
+        
+       
+    }
+ 
+
+}
+
+/*largeScreen*/
+
+@media (min-width: 950px) {
+  .workSamples__title{
+    font-size: var(--size-4xl);
+    color: var(--just-text);
+  }
+  .workSample__content p{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: var(--size-lg)
+}
+
+.workSample__content a i{
+    font-size: 1.5rem;
+}
+
+.workSample__content{
+    text-align: center;
+}
+.workSample__content h3{
+    font-weight: bold;
+    margin-bottom: .8rem;
+    font-size: var(--size-2xl);
+   
+}
+.workSample__gallary{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+}
+}
+
+/*xtraLargeScreen*/
+
+@media (min-width: 1280px) {
+    .workSample__gallary{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .workSample__content h3{
+        font-weight: bolder;
+        margin-bottom: .8rem;
+        font-size: var(--size-xl);
+       
+    }
+    .workSample__content a{
+        height: 50px;
+        width: 50px;
+    
+    }
+}
+
+/*2XtraLargeScreen*/
+
+/* @media (min-width: 1536px) {
+  
+} */

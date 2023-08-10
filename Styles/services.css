@@ -1,0 +1,124 @@
+
+.services__title{
+    color:var(--just-text);
+    text-transform: uppercase;
+    font-size: var(--size-2xl);
+    margin-bottom: 0.5rem;
+}
+.services__All-services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem auto 0;
+}
+.Services__each-service{
+    flex-basis: 100%;
+    margin: 1rem auto 30px;
+    text-align: center;
+    border-radius: 10px;
+    color: var(--text-color);
+    position: relative;
+}
+
+.one{
+    background-image: var(--first-service-background),url(/Images/Data\ J.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+.two{
+    background-image: var(--first-service-background),url(/Images/machine\ learning.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+.three{
+    background-image: var(--second-service-background),url(/Images/AI.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+.four{
+    background-image: var(--second-service-background),url(/Images/data\ protection.jpg);
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.services__eachService-description{
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--other-text);
+    opacity: 0;
+    transition: 2s;
+}
+
+
+.services__eachService-description p{
+    font-weight: bold;
+    margin-top: 1rem;
+    
+}
+.Services__each-service:hover .services__eachService-description{
+    bottom: 10%;
+    opacity: 1;
+}
+
+.services__otherServices{
+    font-weight: bolder;
+}
+
+
+/* xtraSmallScreen */
+/* @media (min-width: 475px) {
+   
+} */
+
+/* smallScreen*/
+
+/* @media (min-width: 640px) {
+   
+} */
+
+/* mediumScreen*/
+
+@media (min-width: 768px) {
+    .Services__each-service{
+        flex-basis: 45%;
+    }
+    .Services__each-service:hover .services__eachService-description{
+        bottom: 15%;
+    }
+    
+}
+
+/*largeScreen*/
+
+@media (min-width: 950px) {
+
+    .services__title{
+        font-size: var(--size-4xl);
+    }
+    .services__eachService-description p{
+    font-size: var(--size-lg);
+}
+.services__eachService-description h3{
+    font-size: var(--size-2xl);
+    text-transform: uppercase;
+}
+}
+
+/*xtraLargeScreen*/
+
+/* @media (min-width: 1280px) {
+   
+} */
+
+/*2XtraLargeScreen*/
+
+/* @media (min-width: 1536px) {
+  
+} */

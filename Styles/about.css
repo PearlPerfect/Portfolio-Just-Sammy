@@ -1,0 +1,165 @@
+.about{
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+.about__allContents{
+    display: flex;
+    flex-direction: column;
+}
+.about__title{
+    font-size: var(--size-xl);
+    color:var(--just-text);
+    margin-bottom: 0.5rem;
+}
+.about__description{
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    margin: 0 auto 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+   
+}
+
+
+
+.about__subtitle{
+    font-size: var(--size-sm);
+    color:var(--just-text);
+    margin-bottom: 1rem;
+  
+}
+.about__ulContainer{
+    display: flex;
+    
+}
+.about__unorderedList{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    list-style-type: '\270D';
+    padding-left: 0.5em;
+    flex: 1;
+}
+.about__listItems{
+    font-size: var(--size-sm);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.about__listItems::before{
+    content: '';
+    margin-left: 0.5em;
+}
+.about__image{
+    margin-top: 0.5em;
+    width: 18rem;
+    border-radius: 10px;
+}
+.about__image-container{
+    margin: 0 auto;
+ }
+
+ /*xtrasmall*/
+@media (min-width: 375px) {
+    .about__description{
+        font-size: var(--size-base);
+    }
+
+    .about__subtitle{
+        font-size: var(--size-lg);
+       
+    }
+    .about__listItems{
+        font-size: var(--size-base);
+        text-transform: capitalize;
+    }
+   
+}
+/* smallScreen*/
+
+
+@media (min-width: 500px){
+
+    .about{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+      }
+
+}
+
+@media (min-width: 640px) {
+    .about__image-container{
+       margin: 0 auto;
+    }
+
+}
+
+/* mediumScreen*/
+
+@media (min-width: 768px) {
+
+
+    
+}
+
+/*largeScreen*/
+
+@media (min-width: 950px) {
+  
+    .about__image{
+      width: 20rem;
+     
+  }
+  
+  .about__title{
+      font-size: var(--size-3xl);
+  }
+  .about__description{
+      font-size: var(--size-base);
+  }
+  
+  .about__subtitle{
+      font-size: var(--size-xl);
+     
+  }
+  .about__listItems{
+      font-size: var(--size-base);
+
+  }
+  
+  }
+  
+  /*xtraLargeScreen*/
+  
+  @media (min-width: 1280px) {
+    .about__image{
+        width: 28rem;
+       
+    }
+      .about__title{
+          font-size: var(--size-4xl);
+      }
+      .about__description{
+          font-size: var(--size-xl);
+      }
+  
+      .about__subtitle{
+          font-size: var(--size-2xl);
+         
+      }
+      .about__listItems{
+          font-size: var(--size-xl);
+        
+      }
+      
+  }
+  
+  /*2XtraLargeScreen*/
+  
+  /* @media (min-width: 1536px) {
+    
+  } */

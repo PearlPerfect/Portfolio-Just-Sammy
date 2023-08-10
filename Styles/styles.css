@@ -1,0 +1,240 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root{
+    --main-background:#232127;
+    --text-color: #f0f8ff;
+    --button-background:#c4b5fd;
+    --button-text:#0c0a09;
+    --button-hover-background:#c5babb;
+    --button-text-hover:#1c1d1f ;
+    --other-text:#0c0a09 ;
+    --other-backgrounds:#3f3736 ;
+    --header-background:linear-gradient(rgba(49, 35, 82, 0.5),#000000);
+    --social-media-text: #075985;
+    --just-text: #0d9488;
+    --first-service-background:linear-gradient(rgba(192, 187, 206, 0.5),#a77474);
+    --second-service-background:linear-gradient(rgba(192, 187, 206, 0.35),#a77474);
+    --work-sample-background: linear-gradient(rgba(121, 120, 122, 0.5),#463535);
+
+
+        /* sizes */
+        --size-xxs: 0.5rem;
+        --size-xs: 0.75rem;
+        --size-sm: 0.875rem;
+        --size-base: 1rem;
+        --size-lg: 1.125rem;
+        --size-xl: 1.25rem;
+        --size-2xl: 1.5rem;
+        --size-3xl: 1.875rem;
+        --size-4xl: 2.25rem;
+        --size-5xl: 3rem;
+        --size-6xl: 3.75rem;
+        --size-7xl: 4.5rem;
+        --size-8xl: 6rem;
+        --size-9xl: 8rem;
+        --size-10xl: 10rem;
+}
+
+.light-mode{
+    --main-background: #ffff;
+    --text-color: #0c0a09;
+    --button-background:#c4b5fd;
+    --button-text:#0c0a09;
+    --button-hover-background:#c5babb;
+    --button-text-hover:#1c1d1f ;
+    --other-text:#232127 ;
+    --other-backgrounds:rgba(148, 141, 140, 0.7) ;
+    --header-background:linear-gradient(rgba(255, 255, 255, 0.6),#aca7a7);
+    --social-media-text: #075985;
+    --just-text:#8b5cf6;
+    --first-service-background:linear-gradient(rgba(192, 187, 206, 0.5),#8f7979);
+    --second-service-background:linear-gradient(rgba(192, 187, 206, 0.35),#a77474);
+    --work-sample-background: linear-gradient(rgba(246, 241, 250, 0.3),#c5bebe);
+}
+
+
+::-webkit-scrollbar{
+    height: 0;
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background: #aca7a7;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--just-text);
+    border-radius: 5rem;
+}
+body{
+    color: var(--text-color);
+    background: var(--main-background);
+
+}
+
+a{
+    color: var(--text-color);
+}
+
+.btn{
+    color:var(--button-text) ;
+    background:var(--button-background) ;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+
+}
+.btn:hover{
+    background: var(--button-hover-background);
+    color: var(--button-text-hover);
+    transform:translateY(-3px);
+    box-shadow:0 0 50px #cffafe;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+li{
+    
+    text-transform: uppercase;
+    color: var(--other-text);
+}
+
+i{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 0.5rem;
+    border: 3px solid var(--just-text);
+    border-radius: 10%;
+}
+
+hr{
+    height: 5px;
+    
+}
+
+.section{
+    margin-top: 3rem;
+}
+
+span{
+    color:var(--just-text);
+}
+p{
+    max-width: 50ch;
+    margin: 0 auto;
+   
+}
+
+/* xtraSmallScreen */
+
+/* @media (min-width: 375px) {
+    .container{
+        max-width: 375px;
+    }
+}
+
+/* smallScreen*/
+
+/* @media (min-width: 640px) {
+    .container{
+        max-width: 640px;
+    }
+} */
+
+/* mediumScreen*/
+
+/* @media (min-width: 768px) {
+    .container{
+        max-width: 768px;
+    }
+} */
+
+/*largeScreen*/
+
+/* @media (min-width: 950px) {
+    .container{
+        max-width: 1024px;
+    }
+
+    li{
+      font-size: var(--size-base);
+    }
+
+
+} */
+
+/*xtraLargeScreen*/
+
+@media (min-width: 1280px) {
+    /* .container{
+        max-width: 1280px;
+    } */
+    .section{
+        margin-top: 5rem;
+    }
+    
+}
+
+/*2XtraLargeScreen*/
+
+/* @media (min-width: 1536px) {
+    .container{
+        max-width: 1536px;
+    }
+
+    .section{
+        margin-top: 10rem;
+    }
+} */ 
+
+
+
+/* xtraSmallScreen */
+/* @media (min-width: 475px) {
+   
+} */
+
+/* smallScreen*/
+
+/* @media (min-width: 640px) {
+   
+} */
+
+/* mediumScreen*/
+
+/* @media (min-width: 768px) {
+  
+    
+} */
+
+/*largeScreen*/
+
+/* @media (min-width: 1024px) {
+  
+} */
+
+/*xtraLargeScreen*/
+
+/* @media (min-width: 1280px) {
+   
+} */
+
+/*2XtraLargeScreen*/
+
+/* @media (min-width: 1536px) {
+  
+} */
