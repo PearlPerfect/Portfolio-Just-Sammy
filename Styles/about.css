@@ -2,6 +2,7 @@
     display: flex;
     flex-direction:column;
     gap: 1rem;
+    margin-top: 3rem;
 }
 .about__allContents{
     display: flex;

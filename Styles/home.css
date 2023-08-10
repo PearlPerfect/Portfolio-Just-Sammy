@@ -27,7 +27,7 @@
   display: inline-flex;
   margin: 0;
   vertical-align: top;
-  font-size: var(--size-base);
+  font-size: var(--size-sm);
 }
 .home__changed-Text h3 .home__changed-words{
   position: absolute;
