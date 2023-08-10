@@ -17,7 +17,7 @@
   max-width: 600px;
 }
 .home__Content h1{
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 
 .home__changed-Text{
@@ -54,7 +54,7 @@ transition: 0.22s cubic-bezier(0.6,0,0.7,0.2);
 
 
 .home__btn{
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem ;
@@ -100,13 +100,7 @@ transition: 0.22s cubic-bezier(0.6,0,0.7,0.2);
   align-items: center;
   gap: 1rem;
 }
-.hackernoon__icon{
-  width:2.5rem;
-  height: 3rem;
-  border: 3px solid var(--just-text);
-  border-radius: 10%;
-  margin-top: 0.5rem;
-}
+
 
 
 
