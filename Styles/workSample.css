@@ -203,7 +203,7 @@
 @media (min-width: 1280px) {
     .workSample__gallary{
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(450px,1fr));
+        grid-template-columns: repeat(auto-fill, minmax(50px,1fr));
         gap: 1rem;
         margin-top: 2rem;
     }
@@ -222,6 +222,22 @@
 
 /*2XtraLargeScreen*/
 
-/* @media (min-width: 1536px) {
-  
-} */
+@media (min-width: 1536px) {
+    .workSample__gallary{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(550px,1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    .workSample__content h3{
+        font-weight: bolder;
+        margin-bottom: .8rem;
+        font-size: var(--size-xl);
+       
+    }
+    .workSample__content a{
+        height: 50px;
+        width: 50px;
+    
+    }
+}
