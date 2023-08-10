@@ -2,7 +2,7 @@
 .services__title{
     color:var(--just-text);
     text-transform: uppercase;
-    font-size: var(--size-2xl);
+    font-size: var(--size-lg);
     margin-bottom: 0.5rem;
 }
 .services__All-services{
@@ -63,12 +63,12 @@
     
 }
 .Services__each-service:hover .services__eachService-description{
-    bottom: 10%;
+    bottom:0;
     opacity: 1;
 }
 
 .services__otherServices{
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 
@@ -79,9 +79,18 @@
 
 /* smallScreen*/
 
-/* @media (min-width: 640px) {
-   
-} */
+@media (min-width: 640px) {
+    .services__otherServices{
+        font-weight: bolder;
+    }
+    .services__title{
+        color:var(--just-text);
+        text-transform: uppercase;
+        font-size: var(--size-2xl);
+        margin-bottom: 0.5rem;
+    }
+      
+}
 
 /* mediumScreen*/
 

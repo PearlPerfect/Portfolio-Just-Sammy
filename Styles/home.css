@@ -54,7 +54,7 @@ transition: 0.22s cubic-bezier(0.6,0,0.7,0.2);
 
 
 .home__btn{
-  margin-top: 1rem;
+  margin-top: .3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem ;
