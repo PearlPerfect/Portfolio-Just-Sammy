@@ -81,7 +81,7 @@
 
 @media (min-width: 640px) {
     .services__otherServices{
-        font-weight: 500;
+        font-weight: bold;
     }
     .services__title{
         color:var(--just-text);
@@ -92,6 +92,7 @@
     .services__eachService-description p{
         font-size: var(--size-lg);
         margin-top: 1rem;
+        font-weight: bold;
     }
       
 }

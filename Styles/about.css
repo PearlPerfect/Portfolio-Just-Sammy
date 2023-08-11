@@ -45,7 +45,7 @@
 .about__listItems{
     font-size: var(--size-sm);
     color: var(--text-color);
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .about__listItems::before{
@@ -54,7 +54,7 @@
 }
 .about__image{
     margin-top: 0.5em;
-    width: 18rem;
+    width: 16rem;
     border-radius: 10px;
 }
 .about__image-container{
@@ -74,6 +74,7 @@
     .about__listItems{
         font-size: var(--size-base);
         text-transform: capitalize;
+        font-weight: bold;
     }
    
 }
