@@ -13,7 +13,7 @@
 }
 .Services__each-service{
     flex-basis: 100%;
-    margin: 1rem auto 30px;
+    margin: .5rem auto 30px;
     text-align: center;
     border-radius: 10px;
     color: var(--text-color);
@@ -47,7 +47,7 @@
 
 .services__eachService-description{
     position: absolute;
-    width: 80%;
+    width: 100%;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -58,8 +58,8 @@
 
 
 .services__eachService-description p{
-    font-weight: bold;
-    margin-top: 1rem;
+    font-weight: 300;
+    margin-top: .2rem;
     
 }
 .Services__each-service:hover .services__eachService-description{
@@ -68,7 +68,7 @@
 }
 
 .services__otherServices{
-    font-weight: bold;
+    font-weight: 500;
 }
 
 
@@ -81,13 +81,17 @@
 
 @media (min-width: 640px) {
     .services__otherServices{
-        font-weight: bolder;
+        font-weight: 500;
     }
     .services__title{
         color:var(--just-text);
         text-transform: uppercase;
         font-size: var(--size-2xl);
         margin-bottom: 0.5rem;
+    }
+    .services__eachService-description p{
+        font-size: var(--size-lg);
+        margin-top: 1rem;
     }
       
 }
@@ -96,7 +100,7 @@
 
 @media (min-width: 768px) {
     .Services__each-service{
-        flex-basis: 45%;
+        flex-basis: 47%;
     }
     .Services__each-service:hover .services__eachService-description{
         bottom: 15%;
@@ -113,6 +117,7 @@
     }
     .services__eachService-description p{
     font-size: var(--size-lg);
+    margin-top: 1rem;
 }
 .services__eachService-description h3{
     font-size: var(--size-2xl);
